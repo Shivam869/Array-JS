@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8" />
+
+<title>Greetings Master</title>
+
+</head>
+
+<body>
+    <p id="Hello"></p>
+    <p id="Hi"></p>
+    <p id="Welcome"></p>
+<script>
+   class student {
+    constructor(name) {
+        this.name=name
+
+    }
+    static hello() {
+        return "hello"
+    }
+    static welcome(x) {
+        return "welcome" + x.name
+    }
+    hi() {
+  return "hi" + this.name      
+    }
+   }
+   student1=new student("Shivam")
+   document.getElementById("Hello") .innerHTML=student.hello()
+   document.getElementById("Hi") .innerHTML=student1.hi()
+   document.getElementById("Welcome") .innerHTML=student.welcome(student1) 
+    </script>
+
+</body>
